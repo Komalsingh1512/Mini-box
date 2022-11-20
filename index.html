@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Hi Everyone!!</h1>
+	<h3>I'm Komal Singh, I am a web developer</h3>
+	<div class="myProducts">
+		<div class="myProducts-gallery">
+			<img src=/image/dog1.webp
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=/image/cat1.webp
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=/image/dog2.webp
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=/image/cat2.webp
+				alt="click here"
+				onclick="myImageFunction(this)">
+		</div>
+
+		<div class="image-container">
+			<img id="img-Box" src=/image/dog3.webp
+				alt="click here">
+		</div>
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+</body>
+
+</html>
